@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Phishing Awareness</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>🚨 You've Just Experienced a Phishing Simulation</h2>
+        <p>This was a simulated phishing attempt for educational purposes.</p>
+        
+        <h3>🔐 How to Stay Safe:</h3>
+        <ul>
+            <li>Always check the sender's email address carefully.</li>
+            <li>Hover over links to preview the real destination before clicking.</li>
+            <li>Never enter credentials on suspicious or unknown pages.</li>
+            <li>Use strong, unique passwords and enable 2FA wherever possible.</li>
+        </ul>
+
+        <h3>🧠 Advanced Awareness Tips:</h3>
+        <ul>
+            <li><strong>Inspect Email Headers:</strong> View raw headers to trace the original source.</li>
+            <li><strong>Use MXToolbox:</strong> <a href="https://mxtoolbox.com/" target="_blank">https://mxtoolbox.com/</a> to analyze DNS records and headers.</li>
+            <li><strong>Verify SPF, DKIM, and DMARC:</strong> Check for proper email authentication.</li>
+            <li><strong>Watch for urgency:</strong> Phrases like “account locked” or “verify now” are red flags.</li>
+            <li><strong>Report suspicious emails:</strong> Share with your IT/security team.</li>
+        </ul>
+
+        <p><strong>Knowledge is your strongest defense.</strong></p>
+
+        <br>
+        <a href="{{ url_for('home') }}" class="button">🏠 Return to Home</a>
+    </div>
+</body>
+</html>

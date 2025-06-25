@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Security Alert: Action Required</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 30px;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+            background: #fff;
+            padding: 25px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        h2 {
+            color: #d9534f;
+        }
+        p {
+            font-size: 15px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #0275d8;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .footer {
+            font-size: 12px;
+            color: #666;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>🔒 Suspicious Login Detected</h2>
+        <p>We detected a login attempt from an unknown device. If this was not you, please secure your account immediately.</p>
+        <p><strong>Time:</strong> {{ "Today" }}<br>
+           <strong>Location:</strong> Unknown<br>
+           <strong>Device:</strong> Chrome on Windows</p>
+        <br>
+        <a href="/user/phishing_page/{{ phishing_link }}" class="button">Secure My Account</a>
+
+
+
+        <div class="footer">
+            If you ignore this alert, your account may be locked for your protection.
+        </div>
+    </div>
+</body>
+</html>

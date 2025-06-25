@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ username }}'s Inbox</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Inbox for {{ username }}</h2>
+    <p>You have 1 new email:</p>
+    <a href="{{ url_for('user.phishing_page', inbox_link=link) }}">Click here to view the email</a>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bank Security Alert</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 30px;
+        }
+        .container {
+            max-width: 550px;
+            margin: auto;
+            background: #fff;
+            padding: 25px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        h2 {
+            color: #d9534f;
+        }
+        p {
+            font-size: 15px;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 20px;
+            background: #0275d8;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .footer {
+            font-size: 12px;
+            color: #888;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>🚨 Urgent: Suspicious Transaction Detected</h2>
+        <p>Dear {{ username }},</p>
+        <p>We have detected an unusual transaction attempt from your account. If this was not you, please verify your account immediately to avoid suspension.</p>
+
+        <p><strong>Transaction Amount:</strong> ₹49,999<br>
+           <strong>Time:</strong> {{ "Today" }}<br>
+           <strong>Location:</strong> Unknown Device</p>
+
+        <a href="/user/phishing_page/{{ phishing_link }}" class="button">Review Transaction</a>
+
+        <div class="footer">
+            This is an automated message from your bank's fraud protection team.
+        </div>
+    </div>
+</body>
+</html>
