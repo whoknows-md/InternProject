@@ -1,0 +1,29 @@
+InternProject/
+├── app/
+│ ├── init.py
+│ ├── admin/
+│ │ ├── routes.py
+│ ├── user/
+│ │ ├── routes.py
+│ ├── templates/
+│ │ ├── admin/
+│ │ │ ├── login.html
+│ │ │ ├── dashboard.html
+│ │ │ ├── campaign_create.html
+│ │ ├── user/
+│ │ │ ├── inbox.html
+│ │ │ ├── phishing_page.html
+│ │ │ ├── educate.html
+│ │ │ ├── user_enter.html
+│ │ ├── email/
+│ │ │ ├── bank_alert.html
+│ │ │ ├── delivery_failure.html
+│ │ │ ├── security_update.html
+│ │ │ ├── login_security_notice.html
+├── data/
+│ └── simulation.db
+├── static/
+│ ├── style.css
+├── utils/
+│ └── smtp_simulator.py
+├── run.py
