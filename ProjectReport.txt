@@ -1,0 +1,59 @@
+EMAIL PHISHING SIMULATION PROJECT
+
+
+1. Introduction
+
+The project simulates email phishing attacks in a safe, educational environment, allowing users to understand how attacks occur and how to protect themselves. It is built with a moto to create awareness and defense strategies to the people and also a part of my Cybersecurity Intern.
+
+2. Abstract
+
+The Email Phishing Simulation Platform is a web based application that allows an administrator to create and launch fake phishing emails with clickable links which redirects it to the fake login pages. The system tracks actions such as email opened, click link, and submit the form. Then the users are lead to the educational page explaining about the best practices and vulnerabilities.
+
+3. Tools Used
+
+  * Language : Python
+  * Framework : Flask
+  * Database : SQLite
+  * Frontend : HTML, CSS
+  * Platform : VS Code
+
+4. Steps Involved in Building the Project
+
+--> Environment Setup
+      * Flask app structure created with admin and user blueprints.
+      * SQLite database initialized to store campaign data.
+      
+--> Admin Functionality
+      * Admin login page and dashboard to view all campaigns.
+      * Create new campaign by selecting an email template and user name.
+      * Generate unique user inbox links with simulated email previews.
+
+--> Email Templates
+      * Multiple phishing email templates created (e.g., fake bank alert, login security notice).
+      * Emails simulate real phishing formats with “Secure My Account” buttons.
+
+--> User Interaction
+      * Users receive inbox links and view phishing emails.
+      * Clicking the link opens a fake login page (common for all templates).
+      * Credentials are submitted (safely recorded), and users are educated afterward.
+
+--> Tracking & Analytics
+      * Tracks whether a user received, clicked, or submitted information.
+      * Admin dashboard reflects real-time status.
+
+--> Educational Page
+      * Summarizes phishing techniques, prevention tips, and advanced tools like MXToolbox, header analysis, etc.
+
+--> Extras
+      * Manual user inbox login by entering unique link ID.
+      * Admin can delete users from the dashboard.
+
+5. Conclusion
+
+This project simulates phishing in a safe lab setup, helping users and administrators understand the behavior of phishing campaigns. This platform can be extended for training sessions, workshops, or corporate awareness programs in the future.
+
+6. NOTE 
+
+Admin Login
+Username : admin
+Password : admin123
