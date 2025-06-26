@@ -26,7 +26,7 @@ This tool allows an **admin** to launch simulated phishing campaigns using custo
 
 - Code: Contains the code files
 - Screenshot folder: Contains screenshots of every page on the website
-- ProjectReport.txt: Contains a detailed explanation of the project
+- ProjectReport.txt: Contains a detailed explanation of the project (includes Admin Login credentials at the "NOTE" section)
 - FilePath: Contains the code files and their path
 
 ## NOTE
